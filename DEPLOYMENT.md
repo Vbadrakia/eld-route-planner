@@ -39,7 +39,7 @@ git commit -m "Initial commit for ELD Route Planner deployment"
 # 5. Create a new repository on GitHub (e.g. named "eld-route-planner")
 # then link and push to it:
 git branch -M main
-git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/eld-route-planner.git
+git remote add origin https://github.com/Vbadrakia/eld-route-planner.git
 git push -u origin main
 ```
 
