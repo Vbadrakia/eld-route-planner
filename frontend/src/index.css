@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base resets ──────────────────────────────────── */
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  .dark {
+    color-scheme: dark;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    @apply m-0 font-sans antialiased bg-surface-50 text-surface-900 dark:bg-surface-950 dark:text-surface-50;
+  }
+  input, select, textarea, button {
+    font: inherit;
+  }
+}
+
+/* ── Leaflet z-index fix ─────────────────────────── */
+.leaflet-container {
+  z-index: 0;
+}
+
+/* ── Print styles ────────────────────────────────── */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* ── Transitions ─────────────────────────────────── */
+.transition-theme {
+  transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+}
